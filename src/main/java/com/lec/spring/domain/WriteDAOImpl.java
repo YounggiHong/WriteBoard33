@@ -27,11 +27,11 @@ public class WriteDAOImpl implements WriteDAO {
 		return mapper.insert(dto);
 	}
 
-//	@Override
-//	public List<WriteDTO> readByUid(int uid) {
-//		mapper.incViewCnt(uid);
-//		return mapper.selectByUid(uid);
-//	}
+	@Override
+	public List<WriteDTO> readByUid(int uid) {
+		mapper.incViewCnt(uid);
+		return mapper.selectByUid(uid);
+	}
 
 	@Override
 	public List<WriteDTO> selectByUid(int uid) {

@@ -39,7 +39,7 @@ function chkDelete(uid){
 		uid : ${list[0].uid }<br>
 		작성자 : ${list[0].name }<br>
 		제목: ${list[0].subject }<br>
-		등록일: ${list[0].regdate }<br>
+		등록일: ${list[0].regDate }<br>
 		조회수: ${list[0].viewCnt }<br>
 		내용: <br>
 		<hr>

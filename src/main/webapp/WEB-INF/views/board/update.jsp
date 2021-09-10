@@ -50,7 +50,7 @@ function chkSubmit(){
 제목:
 <input type="text" name="subject" value="${list[0].subject }"/><span style="color:red">${ERROR.SUBJECT }</span><br>
 내용:<br>
-<textarea name="contnet">${list[0].content }</textarea>
+<textarea name="content">${list[0].content }</textarea>
 <br><br>
 <input type="submit" value="수정"/>
 </form>

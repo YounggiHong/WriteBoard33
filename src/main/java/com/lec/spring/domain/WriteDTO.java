@@ -3,9 +3,14 @@ package com.lec.spring.domain;
 import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
 
+import lombok.Getter;
+import lombok.Setter;
+
 // DTO : Data Transfer Object
 //  DAO 등과 연동하여 데이터를 실어 나르는 객체
 //  필요한 객체(entity) 만큼 작성
+@Getter
+@Setter
 public class WriteDTO {
 	private int uid;   // wr_uid
 	private String subject;  // wr_subject
@@ -34,66 +39,7 @@ public class WriteDTO {
 		this.regDate = regDate;
 //		System.out.println("WriteDTO(...) 객체 생성");
 	}
-
-
-	public int getUid() {
-		return uid;
-	}
-
-
-	public void setUid(int uid) {
-		this.uid = uid;
-	}
-
-
-	public String getSubject() {
-		return subject;
-	}
-
-
-	public void setSubject(String subject) {
-		this.subject = subject;
-	}
-
-
-	public String getContent() {
-		return content;
-	}
-
-
-	public void setContent(String content) {
-		this.content = content;
-	}
-
-
-	public String getName() {
-		return name;
-	}
-
-
-	public void setName(String name) {
-		this.name = name;
-	}
-
-
-	public int getViewCnt() {
-		return viewCnt;
-	}
-
-
-	public void setViewCnt(int viewCnt) {
-		this.viewCnt = viewCnt;
-	}
-
-
-	public LocalDateTime getRegDate() {
-		return regDate;
-	}
-
-
-	public void setRegDate(LocalDateTime regDate) {
-		this.regDate = regDate;
-	}
+	
 	
 	public String getRegDateTime() {
 		if(this.regDate == null) return "";
